@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/点餐.css">
+</head>
+
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <i class="home"></i>
+        <div class="aui-title">可瑞多宇龙工匠店</div>
+    </header>
+    <div class="main">
+        <div class="aui-item">
+            <div class="left-menu" id="left">
+                <ul id="leftgoods">
+                </ul>
+            </div>
+            <div class="con">
+                <div class="con-active" style="display: block;">
+                    <p class="minicake">迷你蛋糕(3)</p>
+                    <ul id="productList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+    </div>
+    <script>
+        const leftgoodsData = [
+            {
+                img: '../img/花.png',
+                type: '迷你蛋糕',
+                shoping: '迷你蛋糕(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '草莓便当盒子',
+                        desc: '蛋糕胚、稀奶油、草莓、马蹄珠',
+                        price: '￥14.18',
+                    },
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '开心果便当盒子',
+                        desc: '蛋糕胚、稀奶油、开心果酱、青提、海盐脆脆、马蹄珠',
+                        price: '￥14.80',
+                    },
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '冰激淋',
+                shoping: '冰激淋(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '夏日香草',
+                        price: '￥178.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '香草巧克力',
+                        price: '￥178.00起/个',
+                    }
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '半糖系列',
+                shoping: '半糖系列(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '香芬玫瑰',
+                        price: '￥238.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '爱丽丝',
+                        price: '￥238.00起/个',
+                    }
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '牧场醇乳',
+                shoping: '牧场醇乳(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '最美的期待',
+                        price: '￥158.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '恋时四季',
+                        price: '￥158.00起/个',
+                    }
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '私人定制',
+                shoping: '私人定制(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '美满心愿',
+                        price: '￥218.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '女神',
+                        price: '￥218.00起/个',
+                    }
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '世界名画',
+                shoping: '世界名画(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '芒果慕斯',
+                        price: '￥168.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '巧之榴莲',
+                        price: '￥168.00起/个',
+                    }
+                ]
+            },
+            {
+                img: '../img/花.png',
+                type: '寿庆系列',
+                shoping: '寿庆系列(2)',
+                products: [
+                    {
+                        image: '../img/蛋糕.png',
+                        name: '财运亨通',
+                        price: '￥198.00起/个',
+                    },
+                    {
+                        image: '../img/蛋糕1.png',
+                        name: '财源滚滚',
+                        price: '￥158.00起/个',
+                    }
+                ]
+            },
+        ]
+        // 渲染左侧菜单
+        const leftgoods = document.getElementById('leftgoods');
+        leftgoodsData.forEach(item => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <img src="${item.img}" alt="">
+                <p>${item.type}</p>
+            `;
+            leftgoods.appendChild(li);
+        });
+
+        // 渲染产品列表
+        const productList = document.getElementById('productList');
+        leftgoodsData.forEach(category => {
+            category.products.forEach(product => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                <a href='./商品详情.html'>
+                    <img src="${product.image}" alt="">
+                    <p class="box">${product.name}</p><br><br>
+                    ${product.desc ? `<span id="desc">${product.desc}</span><br>` : ''}
+                    <p class="prease">${product.price}</p>
+                    <div class="btn"><button class="add"></button></div>
+                </a>
+                 `;
+                productList.appendChild(li);
+            });
+        });
+    </script>
+</body>
+
+</html>

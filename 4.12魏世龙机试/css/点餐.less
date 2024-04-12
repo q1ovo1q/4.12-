@@ -1,0 +1,166 @@
+@unit: 375./100vw;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 375./@unit;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.aui-bar-nav {
+    margin-bottom: 20./@unit;
+
+    .home {
+        float: left;
+        width: 20./@unit;
+        height: 20./@unit;
+        position: relative;
+        top: 0;
+        left: 10./@unit;
+        background: url(../img/主页.png) no-repeat;
+        background-size: 20./@unit 20./@unit;
+    }
+
+    .aui-title {
+        margin-top: 20./@unit;
+        text-align: center;
+    }
+}
+
+.main {
+    width: 375./@unit;
+    height: 667./@unit;
+
+    .aui-item {
+        float: left;
+        flex-direction: row;
+        width: 375./@unit;
+        height: 100%;
+        max-width: 375./@unit;
+
+        .left-menu {
+            float: left;
+            width: 110./@unit;
+            height: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li:hover {
+                    border: 1./@unit solid rgb(6, 177, 3);
+
+                    p {
+                        color: black;
+                    }
+                }
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    float: left;
+                    width: 90./@unit;
+                    margin: 10./@unit 0;
+                    margin-left: 10./@unit;
+                    border-radius: 10./@unit;
+                    background-color: #f5f4f440;
+
+                    img {
+                        float: left;
+                        width: 50./@unit;
+                        height: 50./@unit;
+                        margin-left: 20./@unit;
+                        margin-bottom: 10./@unit;
+                    }
+
+                    p {
+                        float: left;
+                        color: darkgray;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .con {
+            width: calc(375./@unit - 110./@unit);
+            float: left;
+
+            .con-active {
+                width: 265./@unit;
+                float: left;
+                position: relative;
+                background: #fff;
+
+                .minicake {
+                    color: rgba(152, 152, 152, 0.859);
+                }
+
+                #productList {
+                    li {
+                        width: 265./@unit;
+                        height: 150./@unit;
+
+                        img {
+                            float: left;
+                            width: 110./@unit;
+                            height: 110./@unit;
+                        }
+
+                        p {
+                            float: left;
+                            display: block;
+                            font-size: 20./@unit;
+                            font-weight: bold;
+                        }
+
+                        #desc {
+                            color: #949494;
+                            font-size: 10./@unit;
+                            margin-bottom: 10./@unit;
+                        }
+
+                        .prease {
+                            margin-top: 20./@unit;
+                            color: orange;
+                            font-size: 16./@unit;
+
+                            b {
+                                font-size: 22./@unit;
+                            }
+                        }
+
+                        .btn {
+                            width: 50./@unit;
+                            height: 50./@unit;
+                            background-color: transparent;
+                            position: relative;
+                            left: 224./@unit;
+                            bottom: 32./@unit;
+                            cursor: pointer;
+
+                            .add {
+                                width: 30./@unit;
+                                height: 30./@unit;
+                                border: none;
+                                background: url(https://www.jq22.com/demo/jqueryappgwc202008250959/image/add.png) no-repeat;
+                                background-size: cover;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

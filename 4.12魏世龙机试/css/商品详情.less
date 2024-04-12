@@ -1,0 +1,185 @@
+@unit: 375./100vw;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dfdede;
+    max-width: 375./@unit;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.box {
+    width: 375./@unit;
+
+    .header {
+        width: 375./@unit;
+        height: 375./@unit;
+        background-color: antiquewhite;
+        margin-bottom: 40./@unit;
+
+        p {
+            width: 375./@unit;
+            height: 40./@unit;
+            line-height: 40./@unit;
+            text-align: center;
+        }
+
+        img {
+            width: 375./@unit;
+            height: 375./@unit;
+        }
+    }
+
+    .con {
+        padding-top: 20./@unit;
+        background-color: rgb(255, 255, 255);
+        padding-left: 20./@unit;
+
+        h4 {
+            margin-bottom: 10./@unit;
+        }
+
+        .desc {
+            font-size: 14./@unit;
+            color: rgb(118, 117, 117);
+            margin-bottom: 5./@unit;
+        }
+
+        img {
+            width: 52./@unit;
+            height: 17./@unit;
+
+        }
+
+        .prease {
+            color: rgb(239, 174, 54);
+            font-weight: bold;
+            font-size: 14./@unit;
+            padding-bottom: 20./@unit;
+
+            b {
+                font-size: 18./@unit;
+
+            }
+
+            del {
+                font-weight: 400;
+                margin-left: 10./@unit;
+                font-size: 12./@unit;
+                color: rgb(138, 139, 139);
+            }
+        }
+
+        .share {
+            width: 52./@unit;
+            height: 25./@unit;
+            position: relative;
+            left: 301./@unit;
+            bottom: 120./@unit;
+        }
+    }
+
+    .xiang {
+        text-align: center;
+        width: 375./@unit;
+        height: 30./@unit;
+        line-height: 30./@unit;
+        z-index: 111;
+        color: rgb(168, 168, 168);
+        font-size: 14./@unit;
+    }
+
+    .qing {
+        width: 375./@unit;
+        height: 100./@unit;
+        background-color: #ffffff;
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 375./@unit;
+        height: 50./@unit;
+        background-color: #fffcfc;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                display: flex;
+
+                .home {
+                    width: 32./@unit;
+                    height: 32./@unit;
+                    margin-top: 10./@unit;
+                    line-height: 22./@unit;
+                    margin-right: 10./@unit;
+                    background: url(../img/主页1.png) no-repeat;
+                    background-size: 32./@unit 32./@unit;
+                }
+
+                .car {
+                    width: 32./@unit;
+                    margin-top: 10./@unit;
+                    height: 32./@unit;
+                    line-height: 22./@unit;
+                    margin-right: 10./@unit;
+                    background: url(../img/购物车.png) no-repeat;
+                    background-size: 32./@unit 32./@unit;
+                }
+
+                .speak {
+                    width: 32./@unit;
+                    margin-top: 10./@unit;
+                    height: 32./@unit;
+                    line-height: 22./@unit;
+                    background: url(../img/客服.png) no-repeat;
+                    background-size: 32./@unit 32./@unit;
+                }
+
+                .add {
+                    position: relative;
+                    right: -25./@unit;
+                    width: 120./@unit;
+                    height: 50./@unit;
+                    border: none;
+                    border-radius: 45./@unit 0 0 45./@unit;
+                    background-color: rgb(85, 216, 172);
+
+                    .txt {
+                        float: left;
+                        padding-left: 10./@unit;
+                        font-size: 16./@unit;
+                        color: rgb(255, 255, 255);
+                    }
+
+                }
+
+                .shop {
+                    position: relative;
+                    right: 0;
+                    z-index: 100000;
+                    width: 140./@unit;
+                    height: 50./@unit;
+                    border: none;
+                    color: #ffffff;
+                    border-radius: 45./@unit 0  0 45./@unit;
+                    background-color: rgb(43, 179, 179);
+                }
+            }
+        }
+    }
+}

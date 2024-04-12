@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 100vw;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.aui-bar-nav {
+  margin-bottom: 5.33333333vw;
+}
+.aui-bar-nav .home {
+  float: left;
+  width: 5.33333333vw;
+  height: 5.33333333vw;
+  position: relative;
+  top: 0;
+  left: 2.66666667vw;
+  background: url(../img/主页.png) no-repeat;
+  background-size: 5.33333333vw 5.33333333vw;
+}
+.aui-bar-nav .aui-title {
+  margin-top: 5.33333333vw;
+  text-align: center;
+}
+.main {
+  width: 100vw;
+  height: 177.86666667vw;
+}
+.main .aui-item {
+  float: left;
+  flex-direction: row;
+  width: 100vw;
+  height: 100%;
+  max-width: 100vw;
+}
+.main .aui-item .left-menu {
+  float: left;
+  width: 29.33333333vw;
+  height: 100%;
+}
+.main .aui-item .left-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+.main .aui-item .left-menu ul li:hover {
+  border: 0.26666667vw solid #06b103;
+}
+.main .aui-item .left-menu ul li:hover p {
+  color: black;
+}
+.main .aui-item .left-menu ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left;
+  width: 24vw;
+  margin: 2.66666667vw 0;
+  margin-left: 2.66666667vw;
+  border-radius: 2.66666667vw;
+  background-color: #f5f4f440;
+}
+.main .aui-item .left-menu ul li img {
+  float: left;
+  width: 13.33333333vw;
+  height: 13.33333333vw;
+  margin-left: 5.33333333vw;
+  margin-bottom: 2.66666667vw;
+}
+.main .aui-item .left-menu ul li p {
+  float: left;
+  color: darkgray;
+  text-align: center;
+}
+.main .aui-item .con {
+  width: calc(375./3.75vw - 110./3.75vw);
+  float: left;
+}
+.main .aui-item .con .con-active {
+  width: 70.66666667vw;
+  float: left;
+  position: relative;
+  background: #fff;
+}
+.main .aui-item .con .con-active .minicake {
+  color: rgba(152, 152, 152, 0.859);
+}
+.main .aui-item .con .con-active #productList li {
+  width: 70.66666667vw;
+  height: 40vw;
+}
+.main .aui-item .con .con-active #productList li img {
+  float: left;
+  width: 29.33333333vw;
+  height: 29.33333333vw;
+}
+.main .aui-item .con .con-active #productList li p {
+  float: left;
+  display: block;
+  font-size: 5.33333333vw;
+  font-weight: bold;
+}
+.main .aui-item .con .con-active #productList li #desc {
+  color: #949494;
+  font-size: 2.66666667vw;
+  margin-bottom: 2.66666667vw;
+}
+.main .aui-item .con .con-active #productList li .prease {
+  margin-top: 5.33333333vw;
+  color: orange;
+  font-size: 4.26666667vw;
+}
+.main .aui-item .con .con-active #productList li .prease b {
+  font-size: 5.86666667vw;
+}
+.main .aui-item .con .con-active #productList li .btn {
+  width: 13.33333333vw;
+  height: 13.33333333vw;
+  background-color: transparent;
+  position: relative;
+  left: 59.73333333vw;
+  bottom: 8.53333333vw;
+  cursor: pointer;
+}
+.main .aui-item .con .con-active #productList li .btn .add {
+  width: 8vw;
+  height: 8vw;
+  border: none;
+  background: url(https://www.jq22.com/demo/jqueryappgwc202008250959/image/add.png) no-repeat;
+  background-size: cover;
+}
